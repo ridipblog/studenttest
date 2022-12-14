@@ -5,6 +5,7 @@ const fs=require('fs');
 const upload=require('express-fileupload');
 const cookieParser=require('cookie-parser');
 const session=require('express-session');
+const bodyParser=require('body-parser');
 // app.use('/public',express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views',path.join(__dirname,"./views/"));
